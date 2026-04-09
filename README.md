@@ -158,7 +158,6 @@ The HTML example above generates:
 
 - `Fungtion_Independent_Dataset/`: full independent test dataset used in the paper
 - `Fungtion_Training_Dataset/`: full training dataset used in the paper
-- `Fungtion_Independent_Dataset_5_fold/`: full 5-fold split independent test dataset used in the paper for benchmarking
 - `examples/`: example FASTA files for demonstration and example runs
 
 **`reference_data/`**
