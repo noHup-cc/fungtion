@@ -1,0 +1,1532 @@
+[
+  {
+    "Protein ID": "tr|A0A0D1CKI0",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A5B0N8H2",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NOFIND|Unavailable",
+    "Species": "Hemileia vastatrix",
+    "SpeciesFirst": "Hemileia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A059UDR8",
+    "Species": "Blumeria hordei",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1E5A8",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G2X4U8",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JJH4",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AEK86791.1",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1CH44",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|F9XMT4",
+    "Species": "Zymoseptoria tritici",
+    "SpeciesFirst": "Zymoseptoria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AEK86951.1",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0A2JB06",
+    "Species": "Penicillium expansum",
+    "SpeciesFirst": "Penicillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|A9JX75",
+    "Species": "Phaeosphaeria nodorum",
+    "SpeciesFirst": "Phaeosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1PIZ7",
+    "Species": "Dothistroma septosporum",
+    "SpeciesFirst": "Dothistroma",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P78737",
+    "Species": "Pyrenophora tritici-repentis",
+    "SpeciesFirst": "Pyrenophora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|EXK24251.1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1J7E2",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|F4RBY2",
+    "Species": "Melampsora larici-populina",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AGE15681.1",
+    "Species": "Parastagonospora nodorum",
+    "SpeciesFirst": "Parastagonospora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AAS66949.1",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G2XA95",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AAA80239.2",
+    "Species": "Pyricularia grisea",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JJE7",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JN67",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0A2ILW0",
+    "Species": "Penicillium expansum",
+    "SpeciesFirst": "Penicillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AIW07468.1",
+    "Species": "Plenodomus lingam",
+    "SpeciesFirst": "Plenodomus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|ACY39289.1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JFE2",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0A2JY92",
+    "Species": "Penicillium expansum",
+    "SpeciesFirst": "Penicillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JPG4",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0A2JVC2",
+    "Species": "Penicillium expansum",
+    "SpeciesFirst": "Penicillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0J9WTF1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|XP_023455500.1",
+    "Species": "Cercospora beticola",
+    "SpeciesFirst": "Cercospora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|E3KHU8",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|J5J7Y8",
+    "Species": "Beauveria bassiana",
+    "SpeciesFirst": "Beauveria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|QSV27513.1",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1J9C5",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D2YKQ0",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0J9WAR0",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1C5E3",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D2YD41",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|ALQ80833.1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AGG54055.1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A5B0PKJ8",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AGG54052.1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|I1S411",
+    "Species": "Gibberella zeae",
+    "SpeciesFirst": "Gibberella",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1J9M0",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|D0NCU6",
+    "Species": "Phytophthora infestans",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|D0NFU7",
+    "Species": "Phytophthora infestans",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1J8Q9",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JHK8",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1P8YXP4",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|ALS92799.1",
+    "Species": "Plenodomus lingam",
+    "SpeciesFirst": "Plenodomus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4N906",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4N5S2",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DYI3",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1X7S147",
+    "Species": "Zymoseptoria tritici",
+    "SpeciesFirst": "Zymoseptoria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|I1S2K3",
+    "Species": "Gibberella zeae",
+    "SpeciesFirst": "Gibberella",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4TDB9",
+    "Species": "Serendipita indica",
+    "SpeciesFirst": "Serendipita",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0L0VYD3",
+    "Species": "Puccinia striiformis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A2S4VXZ9",
+    "Species": "Puccinia striiformis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AMS24278.1",
+    "Species": "Phakopsora pachyrhizi",
+    "SpeciesFirst": "Phakopsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AMS24280.1",
+    "Species": "Phakopsora pachyrhizi",
+    "SpeciesFirst": "Phakopsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JJX4",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1J4T9",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|ALJ53448.1",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A8H6H084",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N4UGJ9",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|Q2KEJ2",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|G5EHQ6",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G5EI71",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|G2XDH0",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DMP1",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1E6X7",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|B0DRA4",
+    "Species": "Laccaria bicolor",
+    "SpeciesFirst": "Laccaria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A015KJY8",
+    "Species": "Rhizophagus irregularis",
+    "SpeciesFirst": "Rhizophagus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4TUH1",
+    "Species": "Serendipita indica",
+    "SpeciesFirst": "Serendipita",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AEK82122.1",
+    "Species": "Rhizophagus intraradices",
+    "SpeciesFirst": "Rhizophagus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1P8YXI8",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4N6R0",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|F7J180",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|G4MQL4",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1BUK8",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DT89",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DP22",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DPZ4",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DPX0",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|N1JJ94",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A656KNW6",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A5B0N367",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|A0A063CBJ7",
+    "Species": "Ustilaginoidea virens",
+    "SpeciesFirst": "Ustilaginoidea",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A5B0LLJ5",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L8WQP7",
+    "Species": "Thanatephorus cucumeris",
+    "SpeciesFirst": "Thanatephorus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|A0A2H5RJD4",
+    "Species": "Rhizophagus irregularis",
+    "SpeciesFirst": "Rhizophagus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AEK86767.1",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AEK86830.1",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AEK86821.1",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|N4VG36",
+    "Species": "Colletotrichum orbiculare",
+    "SpeciesFirst": "Colletotrichum",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AIZ11404.1",
+    "Species": "Fulvia fulva",
+    "SpeciesFirst": "Fulvia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A5J6DDN9",
+    "Species": "Puccinia striiformis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|6SGO",
+    "Species": "Melampsora laricis-populina",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|AQA29283.1",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|P0CU91",
+    "Species": "Plasmopara viticola",
+    "SpeciesFirst": "Plasmopara",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|A0A411NN20",
+    "Species": "Phytophthora capsici",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|G1FR37",
+    "Species": "Phytophthora sojae",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O42718",
+    "Species": "Phytophthora infestans",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|P0CY26",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|P0CY27",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|P0DJ06",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|M1WHN8",
+    "Species": "Claviceps purpurea",
+    "SpeciesFirst": "Claviceps",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|Q8TGB8",
+    "Species": "Monilinia fructicola",
+    "SpeciesFirst": "Monilinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "sp|G4MPQ7",
+    "Species": "Pyricularia oryzae",
+    "SpeciesFirst": "Pyricularia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|BAB32923.1",
+    "Species": "Alternaria citri",
+    "SpeciesFirst": "Alternaria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|XP_007692327.1",
+    "Species": "Bipolaris oryzae",
+    "SpeciesFirst": "Bipolaris",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q2MV46",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q6R661",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q2MV43",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q2MV49",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1B2CW89",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1B2CW13",
+    "Species": "Melampsora lini",
+    "SpeciesFirst": "Melampsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q334H6",
+    "Species": "Uromyces fabae",
+    "SpeciesFirst": "Uromyces",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|E3KGM7",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A5B0MRS6",
+    "Species": "Puccinia graminis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "gi|KNE96524.1",
+    "Species": "Puccinia striiformis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A142KWI6",
+    "Species": "Phakopsora pachyrhizi",
+    "SpeciesFirst": "Phakopsora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "gi|POW04470.1",
+    "Species": "Puccinia striiformis",
+    "SpeciesFirst": "Puccinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q09QS2",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JGD1",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JFM8",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1L5JEG4",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P22287",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q00363",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q5VB04",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q8NID8",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A023UJQ9",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|B3VBK9",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q00365",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q00364",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9P407",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9P408",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A4F4L2",
+    "Species": "Leptosphaeria maculans",
+    "SpeciesFirst": "Leptosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|E5A6Z5",
+    "Species": "Leptosphaeria maculans",
+    "SpeciesFirst": "Leptosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q258K5",
+    "Species": "Leptosphaeria maculans",
+    "SpeciesFirst": "Leptosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|E4ZT77",
+    "Species": "Leptosphaeria maculans",
+    "SpeciesFirst": "Leptosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q2A0P0",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q2A0P1",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q709D8",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|D0U2C8",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0J9W9U9",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|C0LT61",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|C9WMG9",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|C9WMH0",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|C1KJG7",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|B9A9V1",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|R9RX08",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G5EHH0",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G5EI08",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G5EI20",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G5EHI7",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7IBA8",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A4P7N932",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7J571",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|C4B8B8",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G5EI17",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7I7K3",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7HR07",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0A7DLN4",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0A7DM22",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7I4Y4",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7IFI2",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7HVU3",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4MML4",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4MX34",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7IDN9",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A151V4Q6",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7ICN7",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A4UBM2",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7IKT9",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4NI07",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A151V4M0",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7IJ29",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G4NJP7",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q02039",
+    "Species": "Rhynchosporium secalis",
+    "SpeciesFirst": "Rhynchosporium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|I1VGT7",
+    "Species": "Rhynchosporium commune",
+    "SpeciesFirst": "Rhynchosporium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|I1VGT8",
+    "Species": "Rhynchosporium commune",
+    "SpeciesFirst": "Rhynchosporium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G2X4M1",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|H9DUR1",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G2X9W2",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G2WWV6",
+    "Species": "Verticillium dahliae",
+    "SpeciesFirst": "Verticillium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1DWQ2",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G0X7E8",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1EAR7",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1BW91",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|I2FS85",
+    "Species": "Ustilago hordei",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q4PDL7",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0D1C8C8",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q0TVA4",
+    "Species": "Phaeosphaeria nodorum",
+    "SpeciesFirst": "Phaeosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|H2E5X4",
+    "Species": "Phaeosphaeria nodorum",
+    "SpeciesFirst": "Phaeosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|C5IAW5",
+    "Species": "Phaeosphaeria nodorum",
+    "SpeciesFirst": "Phaeosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9C173",
+    "Species": "Pyrenophora tritici-repentis",
+    "SpeciesFirst": "Pyrenophora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|G2XQ82",
+    "Species": "Botryotinia fuckeliana",
+    "SpeciesFirst": "Botryotinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|B0DD66",
+    "Species": "Laccaria bicolor",
+    "SpeciesFirst": "Laccaria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A2K9YVY7",
+    "Species": "Zymoseptoria tritici",
+    "SpeciesFirst": "Zymoseptoria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A1X7RND5",
+    "Species": "Zymoseptoria tritici",
+    "SpeciesFirst": "Zymoseptoria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A0P1L0F7",
+    "Species": "Colletotrichum graminicola",
+    "SpeciesFirst": "Colletotrichum",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|E3QKL1",
+    "Species": "Colletotrichum graminicola",
+    "SpeciesFirst": "Colletotrichum",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q6WER3",
+    "Species": "Gibberella zeae",
+    "SpeciesFirst": "Gibberella",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A7E9T8",
+    "Species": "Sclerotinia sclerotiorum",
+    "SpeciesFirst": "Sclerotinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|L7NCR0",
+    "Species": "Phytophthora capsici",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|M2TW52",
+    "Species": "Cochliobolus heterostrophus",
+    "SpeciesFirst": "Cochliobolus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1J904",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JK84",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|N1JK93",
+    "Species": "Blumeria graminis",
+    "SpeciesFirst": "Blumeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q14TY3",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O42719",
+    "Species": "Phytophthora infestans",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O42720",
+    "Species": "Ajellomyces capsulatus",
+    "SpeciesFirst": "Ajellomyces",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O42830",
+    "Species": "Phytophthora parasitica",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O59937",
+    "Species": "Fusarium oxysporum",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O74238",
+    "Species": "Phaeosphaeria nodorum",
+    "SpeciesFirst": "Phaeosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O94100",
+    "Species": "Botryotinia fuckeliana",
+    "SpeciesFirst": "Botryotinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|O94196",
+    "Species": "Magnaporthe grisea",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P0CY28",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P26215",
+    "Species": "Cochliobolus carbonum",
+    "SpeciesFirst": "Cochliobolus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P29138",
+    "Species": "Metarhizium anisopliae",
+    "SpeciesFirst": "Metarhizium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P41749",
+    "Species": "Aspergillus flavus",
+    "SpeciesFirst": "Aspergillus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P43070",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P52751",
+    "Species": "Magnaporthe oryzae",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|P78608",
+    "Species": "Claviceps purpurea",
+    "SpeciesFirst": "Claviceps",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q00298",
+    "Species": "Botryotinia fuckeliana",
+    "SpeciesFirst": "Botryotinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q00663",
+    "Species": "Candida tropicalis",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q01905",
+    "Species": "Phytophthora infestans",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q0E7H7",
+    "Species": "Botrytis elliptica",
+    "SpeciesFirst": "Botrytis",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q0R411",
+    "Species": "Hypocrea virens",
+    "SpeciesFirst": "Hypocrea",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q0ZJ79",
+    "Species": "Phytophthora capsici",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q4G495",
+    "Species": "Botryotinia fuckeliana",
+    "SpeciesFirst": "Botryotinia",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q4WMA6",
+    "Species": "Neosartorya fumigata",
+    "SpeciesFirst": "Neosartorya",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q4WNE1",
+    "Species": "Neosartorya fumigata",
+    "SpeciesFirst": "Neosartorya",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q5AA09",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q5TIP4",
+    "Species": "Phaseolus vulgaris",
+    "SpeciesFirst": "Phaseolus",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q6PQG3",
+    "Species": "Phytophthora infestans",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q8J0U4",
+    "Species": "Leptosphaeria maculans",
+    "SpeciesFirst": "Leptosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q8J1Y3",
+    "Species": "Beauveria bassiana",
+    "SpeciesFirst": "Beauveria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q8X1D7",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q945T9",
+    "Species": "Phytophthora sojae",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q94FS7",
+    "Species": "Phytophthora cactorum",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q96TN6",
+    "Species": "Magnaporthe grisea",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q99174",
+    "Species": "Fusarium solani",
+    "SpeciesFirst": "Fusarium",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9C4A0",
+    "Species": "Alternaria alternata",
+    "SpeciesFirst": "Alternaria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9HFZ2",
+    "Species": "Candida albicans",
+    "SpeciesFirst": "Candida",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9P470",
+    "Species": "Magnaporthe grisea",
+    "SpeciesFirst": "Magnaporthe",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|Q9UV32",
+    "Species": "Ustilago maydis",
+    "SpeciesFirst": "Ustilago",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|V5TFR9",
+    "Species": "Leptosphaeria maculans",
+    "SpeciesFirst": "Leptosphaeria",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|W2MG57",
+    "Species": "Phytophthora parasitica",
+    "SpeciesFirst": "Phytophthora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "tr|A0A9Q8PF81",
+    "Species": "Passalora fulva",
+    "SpeciesFirst": "Passalora",
+    "Highlight": "-"
+  },
+  {
+    "Protein ID": "NCBI|CBQ70099.1",
+    "Species": "Sporisorium reilianum",
+    "SpeciesFirst": "Sporisorium",
+    "Highlight": "-"
+  }
+]
