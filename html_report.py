@@ -471,6 +471,10 @@ def generate_html_report(prediction_csv, output_html, manifest_csv=None, assets_
       padding: 15px;
       margin-bottom: 22px;
     }}
+    .citation-well {{
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }}
     .summary-box {{
       border: 1px solid transparent;
       border-radius: 4px;
@@ -730,6 +734,13 @@ def generate_html_report(prediction_csv, output_html, manifest_csv=None, assets_
         <div class="showing-rows" id="showing-rows"></div>
         <ul class="pagination" id="pagination"></ul>
       </div>
+    </div>
+
+    <div class="well well-lg citation-well">
+      <b><font size=+2>I</font></b>f you find our work useful for your research work, please cite:
+      <ul>
+        <li>Li J, Ren J, Dai W <em>et al.</em> Fungtion: a server for predicting and visualizing fungal effector proteins. 2024, <em>Journal of Molecular Biology.</em> <a href="https://doi.org/10.1016/j.jmb.2024.168613" target="_blank" rel="noopener noreferrer">DOI: 10.1016/j.jmb.2024.168613</a></li>
+      </ul>
     </div>
   </div>
   <script type="text/javascript" src="{asset_root.name}/js/jquery-2.2.4.min.js"></script>
