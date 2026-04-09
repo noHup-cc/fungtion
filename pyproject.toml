@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fungtion"
+version = "0.1.0"
+description = "Predict fungal effector proteins from FASTA files using ESM-1b embeddings and R SVM models."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jinzheng Ren", email = "renjinzheng2004@gmail.com" }
+]
+dependencies = [
+  "torch",
+  "fair-esm",
+  "pandas",
+  "numpy",
+  "biopython",
+  "scikit-learn",
+]
+
+[project.urls]
+Homepage = "https://doi.org/10.1016/j.jmb.2024.168613"
+
+[project.scripts]
+fungtion = "main:main"
+
+[tool.setuptools]
+py-modules = ["main", "feature_extraction", "predict", "analysis_outputs", "html_report"]

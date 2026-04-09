@@ -1,0 +1,17 @@
+name: fungtion
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - r-base=4.4
+  - r-e1071
+  - r-caret
+  - r-optparse
+  - pip
+  - pip:
+      - torch
+      - fair-esm
+      - pandas
+      - numpy
+      - biopython
+      - scikit-learn
