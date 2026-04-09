@@ -43,6 +43,23 @@ conda activate fungtion
 pip install -e .
 ```
 
+## PyTorch Compatibility
+
+The default installation will install `torch` automatically.
+
+If your system has specific CPU/GPU or CUDA driver requirements, you may need to reinstall a compatible PyTorch build manually after installation. For example:
+
+```bash
+# CPU only
+pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+
+# Example: CUDA 12.6
+pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu126
+```
+
+Please choose the PyTorch build that matches your local hardware and driver setup:
+- https://pytorch.org/get-started/locally/
+
 ## Example Run
 
 Example FASTA:
