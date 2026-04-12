@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fungtion"
-version = "0.1.0"
+version = "1.0"
 description = "Predict fungal effector proteins from FASTA files using ESM-1b embeddings and R SVM models."
 readme = "README.md"
 requires-python = ">=3.10"
