@@ -1,6 +1,0 @@
-torch
-fair-esm
-pandas
-numpy
-biopython
-scikit-learn

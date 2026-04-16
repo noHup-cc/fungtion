@@ -1,5 +1,6 @@
 import csv
 import os
+import shutil
 import subprocess
 import pandas as pd
 
@@ -48,6 +49,13 @@ def _build_type_link(reference_header):
 
 
 def predict_with_r(feature_csv, header_txt, output_csv, fasta_path=None, reference_fasta=None):
+    if not shutil.which("Rscript"):
+        raise RuntimeError(
+            "Rscript not found on PATH. R must be installed along with the packages "
+            "e1071, caret, and optparse before using fungtion.\n"
+            "Install via conda:  conda install -c conda-forge r-base r-e1071 r-caret r-optparse\n"
+            "See also: https://github.com/noHup-cc/fungtion#install"
+        )
     r_script = os.path.join(os.path.dirname(__file__), 'predict_core.R')
     temp_pred = output_csv + '.tmp'
     cmd = [
