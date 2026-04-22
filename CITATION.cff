@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use Fungtion, please cite the following paper."
+type: software
+title: Fungtion
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/noHup-cc/fungtion"
+url: "https://doi.org/10.1016/j.jmb.2024.168613"
+authors:
+  - family-names: Ren
+    given-names: Jinzheng
+    email: renjinzheng2004@gmail.com
+preferred-citation:
+  type: article
+  title: "Fungtion: A Server for Predicting and Visualizing Fungal Effector Proteins"
+  authors:
+    - family-names: Li
+      given-names: Jiahui
+    - family-names: Ren
+      given-names: Jinzheng
+    - family-names: Dai
+      given-names: Wei
+    - family-names: Stubenrauch
+      given-names: Christopher
+    - family-names: Finn
+      given-names: Robert D.
+    - family-names: Wang
+      given-names: Jiawei
+  journal: "Journal of Molecular Biology"
+  volume: 436
+  issue: 17
+  pages: "168613"
+  year: 2024
+  doi: 10.1016/j.jmb.2024.168613
+  url: "https://doi.org/10.1016/j.jmb.2024.168613"
