@@ -18,3 +18,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `--keep-temp` flag to retain intermediate embedding files
 - `--pretrain` option to use locally cached ESM-1b weights
 - `--device` option for CPU/CUDA selection
+- Added setup for linters, formatters, and pre-commit hooks

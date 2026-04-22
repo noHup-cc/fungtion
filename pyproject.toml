@@ -29,12 +29,26 @@ dependencies = [
   "scikit-learn>=1.7.2",
 ]
 
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.10",
+  "pre-commit>=3.7",
+  "ruff>=0.6",
+]
+
 [project.urls]
 Homepage = "https://doi.org/10.1016/j.jmb.2024.168613"
 Repository = "https://github.com/noHup-cc/fungtion"
 
 [project.scripts]
 fungtion = "main:main"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
 
 [tool.setuptools]
 py-modules = ["main", "feature_extraction", "predict", "analysis_outputs", "html_report"]
