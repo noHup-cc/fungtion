@@ -1,13 +1,20 @@
 import argparse
 import os
 import tempfile
+from importlib.metadata import version, PackageNotFoundError
 from analysis_outputs import generate_visual_outputs
 from feature_extraction import extract_esm_features
 from html_report import generate_html_report
 from predict import predict_with_r
 
+try:
+    __version__ = version("fungtion")
+except PackageNotFoundError:
+    __version__ = "unknown"
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Fungal effector prediction tool.")
+    parser.add_argument('--version', '-v', action='version', version=__version__)
     parser.add_argument('--fasta', required=True, help='Input FASTA file')
     parser.add_argument('--output', required=True, help='Output CSV file')
     parser.add_argument('--pretrain', help='Optional local ESM-1b weights path')
