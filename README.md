@@ -43,6 +43,14 @@ conda activate fungtion
 pip install -e .
 ```
 
+Developer tooling:
+
+```bash
+pip install -e ".[dev]"
+pre-commit install
+pre-commit run --all-files
+```
+
 ## PyTorch Compatibility
 
 The default installation will install `torch` automatically.
@@ -139,6 +147,7 @@ The HTML example above generates:
 - Other sequences are marked as `Pred.` and scored by the R SVM models.
 - The HTML report supports search, sorting, pagination, column toggling, export, help popovers, and visualization links.
 - The ESM-1b network page supports clicking non-query nodes to open UniProt or NCBI Protein pages.
+- Before committing code changes, run `pre-commit run --all-files` to apply Ruff fixes/formatting and basic whitespace checks.
 
 ## More Parameters On Run
 
