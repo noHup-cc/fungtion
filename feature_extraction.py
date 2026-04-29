@@ -1,6 +1,6 @@
 import esm
-import torch
 import pandas as pd
+import torch
 
 
 def _resolve_device(device):
@@ -20,7 +20,9 @@ def extract_esm_features(
 ):
     resolved_device = _resolve_device(device)
     if pretrained_weights_path:
-        model, alphabet = esm.pretrained.load_model_and_alphabet_local(pretrained_weights_path)
+        model, alphabet = esm.pretrained.load_model_and_alphabet_local(
+            pretrained_weights_path
+        )
     else:
         model, alphabet = esm.pretrained.esm1b_t33_650M_UR50S()
     batch_converter = alphabet.get_batch_converter()
@@ -42,11 +44,7 @@ def extract_esm_features(
             results = model(batch_tokens, repr_layers=[33], return_contacts=True)
         token_representations = results["representations"][33]
         embedding = (
-            token_representations[:, 1:len(seq) + 1]
-            .mean(0)
-            .mean(0)
-            .cpu()
-            .numpy()
+            token_representations[:, 1 : len(seq) + 1].mean(0).mean(0).cpu().numpy()
         )
         feature_list.append(embedding)
 
@@ -55,6 +53,6 @@ def extract_esm_features(
         columns=[f"esm_uniref50_{i}" for i in range(len(feature_list[0]))],
     )
     df.to_csv(feature_csv, index=False)
-    with open(header_txt, 'w') as f:
+    with open(header_txt, "w") as f:
         for h in headers:
-            f.write(h + '\n')
+            f.write(h + "\n")

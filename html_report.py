@@ -5,11 +5,12 @@ from pathlib import Path
 
 import pandas as pd
 
-
 PROJECT_ROOT = Path(__file__).resolve().parent
 REFERENCE_WEB_STATIC = PROJECT_ROOT / "assets" / "web_static"
 REFERENCE_TREE_MAPPING = REFERENCE_WEB_STATIC / "xmlfile" / "Fungtion_positive.json"
-PROJECT_LOGO = PROJECT_ROOT / "assets" / "images" / "Fungtion_logo_with_white_text_dpi_72.png"
+PROJECT_LOGO = (
+    PROJECT_ROOT / "assets" / "images" / "Fungtion_logo_with_white_text_dpi_72.png"
+)
 ASSET_PATHS = [
     "css/bootstrap-3.3.1.min.css",
     "css/bootstrap-theme-3.3.1.min.css",
@@ -116,7 +117,7 @@ def _write_network_page(output_path, rel_asset_prefix, seq_name, network_data):
         </div>
         """
     else:
-        body = f"""
+        body = """
         <div class="panel-body">
           <div id="container" style="background-color: #FFFFFF;height:1000px;width:100%"></div>
         </div>
@@ -288,7 +289,9 @@ def _write_network_page(output_path, rel_asset_prefix, seq_name, network_data):
     )
 
 
-def _write_tree_page(output_path, rel_asset_prefix, seq_name, newick_text, mapping_data):
+def _write_tree_page(
+    output_path, rel_asset_prefix, seq_name, newick_text, mapping_data
+):
     if not newick_text:
         body = """
         <div class="panel-body">
@@ -296,7 +299,7 @@ def _write_tree_page(output_path, rel_asset_prefix, seq_name, newick_text, mappi
         </div>
         """
     else:
-        body = f"""
+        body = """
         <div id="container"></div>
         """
 
@@ -352,7 +355,9 @@ def _write_tree_page(output_path, rel_asset_prefix, seq_name, newick_text, mappi
     )
 
 
-def generate_html_report(prediction_csv, output_html, manifest_csv=None, assets_dir=None):
+def generate_html_report(
+    prediction_csv, output_html, manifest_csv=None, assets_dir=None
+):
     output_html = Path(output_html)
     output_html.parent.mkdir(parents=True, exist_ok=True)
     asset_root = _copy_reference_assets(output_html, assets_dir=assets_dir)
@@ -378,8 +383,12 @@ def generate_html_report(prediction_csv, output_html, manifest_csv=None, assets_
 
         network_page = seq_dir / "network.html"
         tree_page = seq_dir / "tree.html"
-        _write_network_page(network_page, rel_asset_prefix, str(row["header"]), network_data)
-        _write_tree_page(tree_page, rel_asset_prefix, str(row["header"]), newick_text, mapping_data)
+        _write_network_page(
+            network_page, rel_asset_prefix, str(row["header"]), network_data
+        )
+        _write_tree_page(
+            tree_page, rel_asset_prefix, str(row["header"]), newick_text, mapping_data
+        )
 
         decision = str(row["decision"])
         decision_label = "Yes" if decision == "yes" else "No"
