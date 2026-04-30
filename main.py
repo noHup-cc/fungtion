@@ -1,7 +1,8 @@
 import argparse
 import os
 import tempfile
-from importlib.metadata import version, PackageNotFoundError
+from importlib.metadata import PackageNotFoundError, version
+
 from analysis_outputs import generate_visual_outputs
 from feature_extraction import extract_esm_features
 from html_report import generate_html_report
@@ -12,19 +13,37 @@ try:
 except PackageNotFoundError:
     __version__ = "unknown"
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Fungal effector prediction tool.")
-    parser.add_argument('--version', '-v', action='version', version=__version__)
-    parser.add_argument('--fasta', required=True, help='Input FASTA file')
-    parser.add_argument('--output', required=True, help='Output CSV file')
-    parser.add_argument('--pretrain', help='Optional local ESM-1b weights path')
-    parser.add_argument('--device', choices=['auto', 'cpu', 'cuda'], default='auto', help='Device for ESM-1b feature extraction')
-    parser.add_argument('--analysis-dir', help='Directory for network and tree outputs')
-    parser.add_argument('--html-output', help='Optional HTML report output path')
-    parser.add_argument('--html-assets-dir', help='Optional directory for HTML assets and per-sequence pages')
-    parser.add_argument('--skip-visualization', action='store_true', help='Skip network and tree generation')
-    parser.add_argument('--keep-temp', action='store_true', help='Keep intermediate feature files')
+    parser.add_argument("--version", "-v", action="version", version=__version__)
+    parser.add_argument("--fasta", required=True, help="Input FASTA file")
+    parser.add_argument("--output", required=True, help="Output CSV file")
+    parser.add_argument("--pretrain", help="Optional local ESM-1b weights path")
+    parser.add_argument(
+        "--device",
+        choices=["auto", "cpu", "cuda"],
+        default="auto",
+        help="Device for ESM-1b feature extraction",
+    )
+    parser.add_argument("--analysis-dir", help="Directory for network and tree outputs")
+    parser.add_argument("--html-output", help="Optional HTML report output path")
+    parser.add_argument(
+        "--html-assets-dir",
+        help="Optional directory for HTML assets and per-sequence pages",
+    )
+    parser.add_argument(
+        "--skip-visualization",
+        action="store_true",
+        help="Skip network and tree generation",
+    )
+    parser.add_argument(
+        "--keep-temp",
+        action="store_true",
+        help="Keep intermediate feature files",
+    )
     return parser.parse_args()
+
 
 def main():
     args = parse_args()
@@ -40,13 +59,17 @@ def main():
 
     for path_value in (output_path, analysis_dir, html_output, html_assets_dir):
         if path_value:
-            parent_dir = path_value if path_value == analysis_dir or path_value == html_assets_dir else os.path.dirname(path_value)
+            parent_dir = (
+                path_value
+                if path_value == analysis_dir or path_value == html_assets_dir
+                else os.path.dirname(path_value)
+            )
             if parent_dir:
                 os.makedirs(parent_dir, exist_ok=True)
 
     temp_dir = tempfile.mkdtemp()
-    feature_csv = os.path.join(temp_dir, 'features.csv')
-    header_txt = os.path.join(temp_dir, 'headers.txt')
+    feature_csv = os.path.join(temp_dir, "features.csv")
+    header_txt = os.path.join(temp_dir, "headers.txt")
     manifest_path = None
 
     extract_esm_features(
@@ -62,7 +85,9 @@ def main():
         header_txt,
         output_path,
         fasta_path=fasta_path,
-        reference_fasta=os.path.join(os.path.dirname(__file__), "reference_data", "FungalEffector_positive.fasta"),
+        reference_fasta=os.path.join(
+            os.path.dirname(__file__), "reference_data", "FungalEffector_positive.fasta"
+        ),
     )
 
     if not skip_visualization:
@@ -96,5 +121,6 @@ def main():
             pass
     print(f"Prediction finished. Results saved to {output_path}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
