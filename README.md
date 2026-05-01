@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/Fungtion_logo_with_black_text_dpi_150.png" alt="Fungtion logo" width="320">
+  <img src="src/fungtion/assets/images/Fungtion_logo_with_black_text_dpi_150.png" alt="Fungtion logo" width="320">
 </p>
 
 # Fungtion
@@ -169,7 +169,7 @@ The HTML example above generates:
 - `Fungtion_Training_Dataset/`: full training dataset used in the paper
 - `examples/`: example FASTA files for demonstration and example runs
 
-**`reference_data/`**
+**`src/fungtion/reference_data/`**
 
 - `FungalEffector_positive.fasta`: experimentally validated fungal effector proteins
 - `FungalEffector_positive_esm_uniref50.csv`: ESM-1b features of the experimentally validated fungal effector proteins

@@ -1,9 +1,9 @@
 exclude: |
   (?x)^(
-    assets/web_static/|
     data/|
-    reference_data/|
-    model/
+    src/fungtion/assets/web_static/|
+    src/fungtion/reference_data/|
+    src/fungtion/model/
   )
 
 repos:

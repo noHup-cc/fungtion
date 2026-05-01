@@ -5,6 +5,8 @@ import subprocess
 
 import pandas as pd
 
+from ._paths import PREDICT_CORE_SCRIPT
+
 
 def _read_fasta_sequences(fasta_path):
     sequences = []
@@ -60,9 +62,15 @@ def predict_with_r(
             "r-base r-e1071 r-caret r-optparse\n"
             "See also: https://github.com/noHup-cc/fungtion#install"
         )
-    r_script = os.path.join(os.path.dirname(__file__), "predict_core.R")
     temp_pred = output_csv + ".tmp"
-    cmd = ["Rscript", r_script, "--features", feature_csv, "--output", temp_pred]
+    cmd = [
+        "Rscript",
+        str(PREDICT_CORE_SCRIPT),
+        "--features",
+        feature_csv,
+        "--output",
+        temp_pred,
+    ]
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         print(result.stderr)

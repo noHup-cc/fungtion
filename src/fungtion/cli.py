@@ -1,17 +1,9 @@
 import argparse
 import os
 import tempfile
-from importlib.metadata import PackageNotFoundError, version
 
-from analysis_outputs import generate_visual_outputs
-from feature_extraction import extract_esm_features
-from html_report import generate_html_report
-from predict import predict_with_r
-
-try:
-    __version__ = version("fungtion")
-except PackageNotFoundError:
-    __version__ = "unknown"
+from . import __version__
+from ._paths import REFERENCE_DATA_DIR
 
 
 def parse_args():
@@ -47,6 +39,11 @@ def parse_args():
 
 def main():
     args = parse_args()
+    from .analysis_outputs import generate_visual_outputs
+    from .feature_extraction import extract_esm_features
+    from .html_report import generate_html_report
+    from .predict import predict_with_r
+
     fasta_path = args.fasta
     output_path = args.output
     pretrained_weights_path = args.pretrain
@@ -85,9 +82,7 @@ def main():
         header_txt,
         output_path,
         fasta_path=fasta_path,
-        reference_fasta=os.path.join(
-            os.path.dirname(__file__), "reference_data", "FungalEffector_positive.fasta"
-        ),
+        reference_fasta=REFERENCE_DATA_DIR / "FungalEffector_positive.fasta",
     )
 
     if not skip_visualization:
@@ -99,7 +94,7 @@ def main():
             feature_csv=feature_csv,
             prediction_csv=output_path,
             analysis_dir=analysis_dir,
-            reference_dir=os.path.join(os.path.dirname(__file__), "reference_data"),
+            reference_dir=REFERENCE_DATA_DIR,
         )
         print(f"Visualization manifest saved to {manifest_path}")
 

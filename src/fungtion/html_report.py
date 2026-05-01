@@ -5,12 +5,11 @@ from pathlib import Path
 
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-REFERENCE_WEB_STATIC = PROJECT_ROOT / "assets" / "web_static"
+from ._paths import ASSETS_DIR
+
+REFERENCE_WEB_STATIC = ASSETS_DIR / "web_static"
 REFERENCE_TREE_MAPPING = REFERENCE_WEB_STATIC / "xmlfile" / "Fungtion_positive.json"
-PROJECT_LOGO = (
-    PROJECT_ROOT / "assets" / "images" / "Fungtion_logo_with_white_text_dpi_72.png"
-)
+PROJECT_LOGO = ASSETS_DIR / "images" / "Fungtion_logo_with_white_text_dpi_72.png"
 ASSET_PATHS = [
     "css/bootstrap-3.3.1.min.css",
     "css/bootstrap-theme-3.3.1.min.css",
