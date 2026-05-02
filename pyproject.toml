@@ -41,7 +41,7 @@ Homepage = "https://doi.org/10.1016/j.jmb.2024.168613"
 Repository = "https://github.com/noHup-cc/fungtion"
 
 [project.scripts]
-fungtion = "main:main"
+fungtion = "fungtion.cli:main"
 
 [tool.ruff]
 target-version = "py310"
@@ -51,8 +51,29 @@ line-length = 88
 select = ["E", "F", "I", "B", "UP"]
 
 [tool.ruff.lint.per-file-ignores]
-"html_report.py" = ["E501"]
-"analysis_outputs.py" = ["E501"]
+"src/fungtion/html_report.py" = ["E501"]
+"src/fungtion/analysis_outputs.py" = ["E501"]
 
 [tool.setuptools]
-py-modules = ["main", "feature_extraction", "predict", "analysis_outputs", "html_report"]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fungtion = [
+  "assets/images/*",
+  "assets/web_static/css/*",
+  "assets/web_static/fonts/*",
+  "assets/web_static/images/*",
+  "assets/web_static/js/*",
+  "assets/web_static/js/google-analytics/*",
+  "assets/web_static/js/phylogram_d3/*",
+  "assets/web_static/js/phylogram_d3/lib/*",
+  "assets/web_static/js/vendor/*",
+  "assets/web_static/xmlfile/*",
+  "model/*.rds",
+  "predict_core.R",
+  "reference_data/*",
+  "reference_data/FungalEffector_positive_similarity_matrix/*",
+]
