@@ -31,6 +31,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
+  "pytest>=8.0",
   "mypy>=1.10",
   "pre-commit>=3.7",
   "ruff>=0.6",
@@ -77,3 +78,6 @@ fungtion = [
   "reference_data/*",
   "reference_data/FungalEffector_positive_similarity_matrix/*",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
