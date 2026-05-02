@@ -2,9 +2,13 @@ import runpy
 
 import pytest
 
-from fungtion import __version__
-from fungtion import cli
-from fungtion._paths import ASSETS_DIR, MODEL_DIR, PREDICT_CORE_SCRIPT, REFERENCE_DATA_DIR
+from fungtion import __version__, cli
+from fungtion._paths import (
+    ASSETS_DIR,
+    MODEL_DIR,
+    PREDICT_CORE_SCRIPT,
+    REFERENCE_DATA_DIR,
+)
 
 
 def test_parse_args_with_required_arguments(monkeypatch):
