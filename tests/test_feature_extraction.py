@@ -30,9 +30,7 @@ def test_resolve_device_auto_uses_cpu_when_cuda_is_unavailable(
     assert feature_extraction_module._resolve_device("auto") == "cpu"
 
 
-def test_resolve_device_raises_for_missing_cuda(
-    monkeypatch, feature_extraction_module
-):
+def test_resolve_device_raises_for_missing_cuda(monkeypatch, feature_extraction_module):
     monkeypatch.setattr(
         feature_extraction_module.torch.cuda, "is_available", lambda: False
     )

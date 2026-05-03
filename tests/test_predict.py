@@ -22,7 +22,9 @@ def test_format_score_and_type_link_edge_cases():
     assert _format_score(1.0) == "1"
     assert _format_score(0.12345) == "0.123"
     assert _format_score(0.2, exact_positive=True) == "1"
-    assert _build_type_link("tr|Q12345|desc") == "https://www.uniprot.org/uniprot/Q12345"
+    assert (
+        _build_type_link("tr|Q12345|desc") == "https://www.uniprot.org/uniprot/Q12345"
+    )
     assert (
         _build_type_link("ncbi|ABC123|desc")
         == "https://www.ncbi.nlm.nih.gov/protein/ABC123"
@@ -30,9 +32,7 @@ def test_format_score_and_type_link_edge_cases():
     assert _build_type_link("unknown_header") == ""
 
 
-def test_predict_with_r_generates_expected_csv_and_exact_matches(
-    monkeypatch, tmp_path
-):
+def test_predict_with_r_generates_expected_csv_and_exact_matches(monkeypatch, tmp_path):
     feature_csv = tmp_path / "features.csv"
     feature_csv.write_text("esm_uniref50_0\n0.1\n0.2\n")
     header_txt = tmp_path / "headers.txt"
