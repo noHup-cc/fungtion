@@ -21,7 +21,8 @@ def test_setup_models_main_prints_download_location(monkeypatch, capsys, tmp_pat
     weights_path = tmp_path / "models" / ESM1B_MODEL_FILENAME
 
     monkeypatch.setattr(
-        "fungtion.cli.download_pretrained_weights", lambda **kwargs: (weights_path, True)
+        "fungtion.cli.download_pretrained_weights",
+        lambda **kwargs: (weights_path, True),
     )
 
     cli.main(["setup-models", "--model-dir", str(tmp_path / "models")])
@@ -67,7 +68,9 @@ def test_download_pretrained_weights_writes_downloaded_file(monkeypatch, tmp_pat
 
     monkeypatch.setattr("fungtion.setup_models.urlopen", fake_urlopen)
 
-    resolved_path, downloaded = download_pretrained_weights(model_dir=tmp_path / "models")
+    resolved_path, downloaded = download_pretrained_weights(
+        model_dir=tmp_path / "models"
+    )
 
     assert resolved_path.read_bytes() == b"fake-weights"
     assert downloaded is True
