@@ -77,7 +77,8 @@ Example FASTA:
 ## Download ESM-1b Weights
 
 Before prediction, you can download the pretrained ESM-1b weights through a
-separate setup step:
+separate setup step. This downloads the same ESM-1b weight file that Fungtion
+would otherwise fetch automatically through `fair-esm`:
 
 ```bash
 fungtion setup-models
@@ -93,6 +94,13 @@ You can also choose a custom directory:
 
 ```bash
 fungtion setup-models --model-dir /path/to/models
+```
+
+If the weights already exist locally, the setup step will skip downloading by
+default. To force a fresh download and overwrite the existing local copy, use:
+
+```bash
+fungtion setup-models --force
 ```
 
 Simple:
@@ -132,7 +140,11 @@ fungtion \
 If the setup-downloaded weights exist in the default Fungtion cache directory,
 the prediction command will use them automatically.
 
-You can also download the model weights manually to a local path and run Fungtion with `--pretrain /path/to/esm1b_t33_650M_UR50S.pt`.
+If you pass `--pretrain`, Fungtion will use that explicit local path in
+preference to the default setup location.
+
+You can also download the model weights manually to a local path and run
+Fungtion with `--pretrain /path/to/esm1b_t33_650M_UR50S.pt`.
 
 ```bash
 fungtion \
@@ -176,7 +188,6 @@ The HTML example above generates:
 - `--fasta`: input FASTA file
 - `--output`: output CSV file for prediction results
 - `--pretrain`: optional local path to pretrained ESM-1b weights
-- `setup-models`: download the pretrained ESM-1b weights ahead of prediction
 - `--device`: device for ESM-1b feature extraction; choose from `auto`, `cpu`, or `cuda`
 - `--analysis-dir`: output directory for network and tree files
 - `--html-output`: output HTML report path

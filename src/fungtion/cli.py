@@ -10,7 +10,6 @@ from .setup_models import download_pretrained_weights, resolve_pretrained_weight
 
 def _predict_parser():
     parser = argparse.ArgumentParser(description="Fungal effector prediction tool.")
-    parser.add_argument("--version", "-v", action="version", version=__version__)
     parser.add_argument("--fasta", required=True, help="Input FASTA file")
     parser.add_argument("--output", required=True, help="Output CSV file")
     parser.add_argument("--pretrain", help="Optional local ESM-1b weights path")
@@ -45,7 +44,6 @@ def _setup_models_parser():
         prog="fungtion setup-models",
         description="Download the pretrained ESM-1b weights used by Fungtion.",
     )
-    parser.add_argument("--version", "-v", action="version", version=__version__)
     parser.add_argument(
         "--model-dir",
         help="Optional directory where the downloaded ESM-1b weights should be stored",
@@ -61,6 +59,11 @@ def _setup_models_parser():
 
 def parse_args(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
+    top_level_parser = argparse.ArgumentParser(add_help=False)
+    top_level_parser.add_argument(
+        "--version", "-v", action="version", version=__version__
+    )
+    top_level_parser.parse_known_args(argv)
     if argv and argv[0] == "setup-models":
         return _setup_models_parser().parse_args(argv[1:])
     return _predict_parser().parse_args(argv)
