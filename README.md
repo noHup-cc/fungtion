@@ -74,6 +74,36 @@ Example FASTA:
 
 - `data/examples/example.fasta`
 
+## Download ESM-1b Weights
+
+Before prediction, you can download the pretrained ESM-1b weights through a
+separate setup step. This downloads the same ESM-1b model files that Fungtion
+would otherwise fetch automatically through `fair-esm`:
+
+```bash
+fungtion setup-models
+```
+
+By default, the downloaded files are stored at:
+
+```text
+~/.cache/fungtion/models/esm1b_t33_650M_UR50S.pt
+~/.cache/fungtion/models/esm1b_t33_650M_UR50S-contact-regression.pt
+```
+
+You can also choose a custom directory:
+
+```bash
+fungtion setup-models --model-dir /path/to/models
+```
+
+If the weights already exist locally, the setup step will skip downloading by
+default. To force a fresh download and overwrite the existing local copy, use:
+
+```bash
+fungtion setup-models --force
+```
+
 Simple:
 
 ```bash
@@ -108,9 +138,18 @@ fungtion \
 
 ## Note
 
-The first run may take longer because the pretrained ESM-1b model weights may need to be downloaded and cached locally. After the first successful run, later runs are usually faster.
+If the setup-downloaded weights exist in the default Fungtion cache directory,
+the prediction command will use them automatically.
 
-You can also download the model weights manually to a local path and run Fungtion with `--pretrain /path/to/esm1b_t33_650M_UR50S.pt`.
+If you pass `--pretrain`, Fungtion will use that explicit local path in
+preference to the default setup location.
+
+If you provide `--pretrain`, the matching
+`esm1b_t33_650M_UR50S-contact-regression.pt` file should be present alongside
+the main weights file so `fair-esm` can load the local model correctly.
+
+You can also download the model files manually to a local path and run
+Fungtion with `--pretrain /path/to/esm1b_t33_650M_UR50S.pt`.
 
 ```bash
 fungtion \
@@ -123,6 +162,7 @@ fungtion \
 
 Official ESM-1b weights:
 - https://dl.fbaipublicfiles.com/fair-esm/models/esm1b_t33_650M_UR50S.pt
+- https://dl.fbaipublicfiles.com/fair-esm/regression/esm1b_t33_650M_UR50S-contact-regression.pt
 
 ## Example Run Output
 
