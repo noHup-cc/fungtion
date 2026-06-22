@@ -11,7 +11,8 @@ from .setup_models import download_pretrained_weights, resolve_pretrained_weight
 def _predict_parser():
     parser = argparse.ArgumentParser(description="Fungal effector prediction tool.")
     parser.add_argument("--fasta", required=True, help="Input FASTA file")
-    parser.add_argument("--output", required=True, help="Output CSV file")
+    parser.add_argument("--output-dir", required=True, help="Parent output directory")
+    parser.add_argument("--prefix", required=True, help="Name for the output folder")
     parser.add_argument("--pretrain", help="Optional local ESM-1b weights path")
     parser.add_argument(
         "--device",
@@ -19,11 +20,10 @@ def _predict_parser():
         default="auto",
         help="Device for ESM-1b feature extraction",
     )
-    parser.add_argument("--analysis-dir", help="Directory for network and tree outputs")
-    parser.add_argument("--html-output", help="Optional HTML report output path")
     parser.add_argument(
-        "--html-assets-dir",
-        help="Optional directory for HTML assets and per-sequence pages",
+        "--html-report",
+        action="store_true",
+        help="Generate HTML report and bundled assets",
     )
     parser.add_argument(
         "--skip-visualization",
@@ -91,26 +91,24 @@ def main(argv=None):
     from .predict import predict_with_r
 
     fasta_path = args.fasta
-    output_path = args.output
+    output_root = os.path.join(args.output_dir, args.prefix)
+    output_path = os.path.join(output_root, f"{args.prefix}.csv")
     pretrained_weights_path = resolve_pretrained_weights_path(args.pretrain)
     device = args.device
-    analysis_dir = args.analysis_dir
-    html_output = args.html_output
-    html_assets_dir = args.html_assets_dir
+    analysis_dir = os.path.join(output_root, f"{args.prefix}_analysis")
+    html_output = os.path.join(output_root, f"{args.prefix}.html")
+    html_assets_dir = os.path.join(output_root, f"{args.prefix}_assets")
+    html_report = args.html_report
     skip_visualization = args.skip_visualization
     keep_temp = args.keep_temp
 
-    for path_value in (output_path, analysis_dir, html_output, html_assets_dir):
-        if path_value:
-            parent_dir = (
-                path_value
-                if path_value == analysis_dir or path_value == html_assets_dir
-                else os.path.dirname(path_value)
-            )
-            if parent_dir:
-                os.makedirs(parent_dir, exist_ok=True)
+    os.makedirs(output_root, exist_ok=True)
 
-    temp_dir = tempfile.mkdtemp()
+    if keep_temp:
+        temp_dir = os.path.join(output_root, f"{args.prefix}_temp_folder")
+        os.makedirs(temp_dir, exist_ok=True)
+    else:
+        temp_dir = tempfile.mkdtemp()
     feature_csv = os.path.join(temp_dir, "features.csv")
     header_txt = os.path.join(temp_dir, "headers.txt")
     manifest_path = None
@@ -132,9 +130,6 @@ def main(argv=None):
     )
 
     if not skip_visualization:
-        if analysis_dir is None:
-            output_base, _output_ext = os.path.splitext(output_path)
-            analysis_dir = output_base + "_analysis"
         manifest_path = generate_visual_outputs(
             fasta_path=fasta_path,
             feature_csv=feature_csv,
@@ -144,7 +139,7 @@ def main(argv=None):
         )
         print(f"Visualization manifest saved to {manifest_path}")
 
-    if html_output:
+    if html_report:
         generate_html_report(
             prediction_csv=output_path,
             output_html=html_output,
@@ -160,6 +155,8 @@ def main(argv=None):
             os.rmdir(temp_dir)
         except Exception:
             pass
+    else:
+        print(f"Intermediate files kept in {temp_dir}")
     print(f"Prediction finished. Results saved to {output_path}")
 
 

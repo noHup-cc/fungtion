@@ -21,15 +21,18 @@ def test_parse_args_with_required_arguments(monkeypatch):
             "fungtion",
             "--fasta",
             "input.fasta",
-            "--output",
-            "output.csv",
+            "--output-dir",
+            "outputs",
+            "--prefix",
+            "sample",
         ],
     )
 
     args = cli.parse_args()
 
     assert args.fasta == "input.fasta"
-    assert args.output == "output.csv"
+    assert args.output_dir == "outputs"
+    assert args.prefix == "sample"
     assert args.device == "auto"
     assert args.skip_visualization is False
 
@@ -69,7 +72,8 @@ def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, cap
     monkeypatch.setenv("FUNGTION_MODEL_DIR", str(tmp_path / "models"))
     fasta_path = tmp_path / "input.fasta"
     fasta_path.write_text(">seq1\nMKT\n")
-    output_path = tmp_path / "predictions.csv"
+    output_root = tmp_path / "outputs" / "predictions"
+    output_path = output_root / "predictions.csv"
     temp_dir = tmp_path / "temp"
     temp_dir.mkdir()
 
@@ -129,8 +133,10 @@ def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, cap
             "fungtion",
             "--fasta",
             str(fasta_path),
-            "--output",
-            str(output_path),
+            "--output-dir",
+            str(tmp_path / "outputs"),
+            "--prefix",
+            "predictions",
             "--skip-visualization",
         ],
     )
@@ -149,12 +155,12 @@ def test_main_runs_visualization_and_html_paths(monkeypatch, tmp_path, capsys):
     monkeypatch.setenv("FUNGTION_MODEL_DIR", str(tmp_path / "models"))
     fasta_path = tmp_path / "input.fasta"
     fasta_path.write_text(">seq1\nMKT\n")
-    output_path = tmp_path / "results" / "predictions.csv"
-    analysis_dir = tmp_path / "analysis"
-    html_output = tmp_path / "reports" / "report.html"
-    html_assets_dir = tmp_path / "reports" / "assets"
-    temp_dir = tmp_path / "temp_keep"
-    temp_dir.mkdir()
+    output_root = tmp_path / "results" / "predictions"
+    output_path = output_root / "predictions.csv"
+    analysis_dir = output_root / "predictions_analysis"
+    html_output = output_root / "predictions.html"
+    html_assets_dir = output_root / "predictions_assets"
+    temp_dir = output_root / "predictions_temp_folder"
 
     def fake_extract(
         fasta_path_arg,
@@ -220,21 +226,17 @@ def test_main_runs_visualization_and_html_paths(monkeypatch, tmp_path, capsys):
         "fungtion.html_report",
         types.SimpleNamespace(generate_html_report=fake_generate_html_report),
     )
-    monkeypatch.setattr("fungtion.cli.tempfile.mkdtemp", lambda: str(temp_dir))
     monkeypatch.setattr(
         "sys.argv",
         [
             "fungtion",
             "--fasta",
             str(fasta_path),
-            "--output",
-            str(output_path),
-            "--analysis-dir",
-            str(analysis_dir),
-            "--html-output",
-            str(html_output),
-            "--html-assets-dir",
-            str(html_assets_dir),
+            "--output-dir",
+            str(tmp_path / "results"),
+            "--prefix",
+            "predictions",
+            "--html-report",
             "--keep-temp",
         ],
     )
@@ -249,3 +251,4 @@ def test_main_runs_visualization_and_html_paths(monkeypatch, tmp_path, capsys):
     assert (temp_dir / "headers.txt").exists()
     assert "Visualization manifest saved to" in captured.out
     assert "HTML report saved to" in captured.out
+    assert f"Intermediate files kept in {temp_dir}" in captured.out
