@@ -156,7 +156,6 @@ def test_main_runs_visualization_and_html_paths(monkeypatch, tmp_path, capsys):
     fasta_path = tmp_path / "input.fasta"
     fasta_path.write_text(">seq1\nMKT\n")
     output_root = tmp_path / "results" / "predictions"
-    output_path = output_root / "predictions.csv"
     analysis_dir = output_root / "predictions_analysis"
     html_output = output_root / "predictions.html"
     html_assets_dir = output_root / "predictions_assets"
