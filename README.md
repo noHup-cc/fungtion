@@ -77,18 +77,17 @@ Example FASTA:
 ## Download ESM-1b Weights
 
 Before prediction, you can download the pretrained ESM-1b weights through a
-separate setup step. This downloads the same ESM-1b model files that Fungtion
+separate setup step. This downloads the same ESM-1b model file that Fungtion
 would otherwise fetch automatically through `fair-esm`:
 
 ```bash
 fungtion setup-models
 ```
 
-By default, the downloaded files are stored at:
+By default, the downloaded file is stored at:
 
 ```text
 ~/.cache/fungtion/models/esm1b_t33_650M_UR50S.pt
-~/.cache/fungtion/models/esm1b_t33_650M_UR50S-contact-regression.pt
 ```
 
 You can also choose a custom directory:
@@ -144,11 +143,7 @@ the prediction command will use them automatically.
 If you pass `--pretrain`, Fungtion will use that explicit local path in
 preference to the default setup location.
 
-If you provide `--pretrain`, the matching
-`esm1b_t33_650M_UR50S-contact-regression.pt` file should be present alongside
-the main weights file so `fair-esm` can load the local model correctly.
-
-You can also download the model files manually to a local path and run
+You can also download the model file manually to a local path and run
 Fungtion with `--pretrain /path/to/esm1b_t33_650M_UR50S.pt`.
 
 ```bash
@@ -162,7 +157,6 @@ fungtion \
 
 Official ESM-1b weights:
 - https://dl.fbaipublicfiles.com/fair-esm/models/esm1b_t33_650M_UR50S.pt
-- https://dl.fbaipublicfiles.com/fair-esm/regression/esm1b_t33_650M_UR50S-contact-regression.pt
 
 ## Example Run Output
 

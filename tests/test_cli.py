@@ -66,6 +66,7 @@ def test_packaged_resource_paths_exist():
 
 
 def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, capsys):
+    monkeypatch.setenv("FUNGTION_MODEL_DIR", str(tmp_path / "models"))
     fasta_path = tmp_path / "input.fasta"
     fasta_path.write_text(">seq1\nMKT\n")
     output_path = tmp_path / "predictions.csv"
@@ -145,6 +146,7 @@ def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, cap
 
 
 def test_main_runs_visualization_and_html_paths(monkeypatch, tmp_path, capsys):
+    monkeypatch.setenv("FUNGTION_MODEL_DIR", str(tmp_path / "models"))
     fasta_path = tmp_path / "input.fasta"
     fasta_path.write_text(">seq1\nMKT\n")
     output_path = tmp_path / "results" / "predictions.csv"
