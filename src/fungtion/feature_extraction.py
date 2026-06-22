@@ -1,3 +1,7 @@
+import argparse
+import warnings
+from pathlib import Path
+
 import esm
 import pandas as pd
 import torch
@@ -11,6 +15,29 @@ def _resolve_device(device):
     return device
 
 
+def _load_local_model_and_alphabet(pretrained_weights_path):
+    model_location = Path(pretrained_weights_path)
+    model_name = model_location.stem
+    safe_globals = getattr(getattr(torch, "serialization", None), "safe_globals", None)
+    if safe_globals is None:
+        model_data = torch.load(str(model_location), map_location="cpu")
+        return _load_model_core_without_regression_warning(model_name, model_data)
+
+    with safe_globals([argparse.Namespace]):
+        model_data = torch.load(str(model_location), map_location="cpu")
+    return _load_model_core_without_regression_warning(model_name, model_data)
+
+
+def _load_model_core_without_regression_warning(model_name, model_data):
+    with warnings.catch_warnings():
+        warnings.filterwarnings(
+            "ignore",
+            message="Regression weights not found.*",
+            category=UserWarning,
+        )
+        return esm.pretrained.load_model_and_alphabet_core(model_name, model_data)
+
+
 def extract_esm_features(
     fasta_path,
     feature_csv,
@@ -20,9 +47,7 @@ def extract_esm_features(
 ):
     resolved_device = _resolve_device(device)
     if pretrained_weights_path:
-        model, alphabet = esm.pretrained.load_model_and_alphabet_local(
-            pretrained_weights_path
-        )
+        model, alphabet = _load_local_model_and_alphabet(pretrained_weights_path)
     else:
         model, alphabet = esm.pretrained.esm1b_t33_650M_UR50S()
     batch_converter = alphabet.get_batch_converter()
@@ -41,7 +66,7 @@ def extract_esm_features(
     for header, seq in sequences:
         batch_tokens = batch_converter([(header, seq)])[2].to(resolved_device)
         with torch.no_grad():
-            results = model(batch_tokens, repr_layers=[33], return_contacts=True)
+            results = model(batch_tokens, repr_layers=[33], return_contacts=False)
         token_representations = results["representations"][33]
         embedding = (
             token_representations[:, 1 : len(seq) + 1].mean(0).mean(0).cpu().numpy()

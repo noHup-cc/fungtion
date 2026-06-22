@@ -1,14 +1,15 @@
 import argparse
 import os
+import sys
 import tempfile
 
 from . import __version__
 from ._paths import REFERENCE_DATA_DIR
+from .setup_models import download_pretrained_weights, resolve_pretrained_weights_path
 
 
-def parse_args():
+def _predict_parser():
     parser = argparse.ArgumentParser(description="Fungal effector prediction tool.")
-    parser.add_argument("--version", "-v", action="version", version=__version__)
     parser.add_argument("--fasta", required=True, help="Input FASTA file")
     parser.add_argument("--output", required=True, help="Output CSV file")
     parser.add_argument("--pretrain", help="Optional local ESM-1b weights path")
@@ -34,11 +35,56 @@ def parse_args():
         action="store_true",
         help="Keep intermediate feature files",
     )
-    return parser.parse_args()
+    parser.set_defaults(command="predict")
+    return parser
 
 
-def main():
-    args = parse_args()
+def _setup_models_parser():
+    parser = argparse.ArgumentParser(
+        prog="fungtion setup-models",
+        description="Download the pretrained ESM-1b weights used by Fungtion.",
+    )
+    parser.add_argument(
+        "--model-dir",
+        help="Optional directory where the downloaded ESM-1b weights should be stored",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-download the ESM-1b weights even if they already exist locally",
+    )
+    parser.set_defaults(command="setup-models")
+    return parser
+
+
+def parse_args(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    top_level_parser = argparse.ArgumentParser(add_help=False)
+    top_level_parser.add_argument(
+        "--version", "-v", action="version", version=__version__
+    )
+    top_level_parser.parse_known_args(argv)
+    if argv and argv[0] == "setup-models":
+        return _setup_models_parser().parse_args(argv[1:])
+    return _predict_parser().parse_args(argv)
+
+
+def _run_setup_models(args):
+    weights_path, downloaded = download_pretrained_weights(
+        model_dir=args.model_dir, force=args.force
+    )
+    if downloaded:
+        print(f"Downloaded ESM-1b weights to {weights_path}")
+    else:
+        print(f"ESM-1b weights already exist at {weights_path}")
+
+
+def main(argv=None):
+    args = parse_args(argv)
+    if args.command == "setup-models":
+        _run_setup_models(args)
+        return
+
     from .analysis_outputs import generate_visual_outputs
     from .feature_extraction import extract_esm_features
     from .html_report import generate_html_report
@@ -46,7 +92,7 @@ def main():
 
     fasta_path = args.fasta
     output_path = args.output
-    pretrained_weights_path = args.pretrain
+    pretrained_weights_path = resolve_pretrained_weights_path(args.pretrain)
     device = args.device
     analysis_dir = args.analysis_dir
     html_output = args.html_output
