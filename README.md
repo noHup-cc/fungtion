@@ -188,8 +188,8 @@ The HTML example above generates everything under `outputs/example_prediction/`:
 ## More Parameters On Run
 
 - `--fasta`: input FASTA file
-- `--output-dir`: parent directory for all outputs
-- `--prefix`: name of the main output folder and generated files
+- `--output-dir`: directory where the prefixed output folder will be created
+- `--prefix`: naming identifier for the output folder and generated files
 - `--pretrain`: optional local path to pretrained ESM-1b weights
 - `--device`: device for ESM-1b feature extraction; choose from `auto`, `cpu`, or `cuda`
 - `--html-report`: generate the HTML report and bundled assets

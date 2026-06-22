@@ -11,8 +11,16 @@ from .setup_models import download_pretrained_weights, resolve_pretrained_weight
 def _predict_parser():
     parser = argparse.ArgumentParser(description="Fungal effector prediction tool.")
     parser.add_argument("--fasta", required=True, help="Input FASTA file")
-    parser.add_argument("--output-dir", required=True, help="Parent output directory")
-    parser.add_argument("--prefix", required=True, help="Name for the output folder")
+    parser.add_argument(
+        "--output-dir",
+        required=True,
+        help="Directory where the prefixed output folder will be created",
+    )
+    parser.add_argument(
+        "--prefix",
+        required=True,
+        help="Naming identifier for the output folder and generated files",
+    )
     parser.add_argument("--pretrain", help="Optional local ESM-1b weights path")
     parser.add_argument(
         "--device",
