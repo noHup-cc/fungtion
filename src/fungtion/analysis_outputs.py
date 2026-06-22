@@ -421,8 +421,7 @@ def generate_visual_outputs(
 
         query_id = f"Query_{index}"
         entry_dir = (
-            analysis_dir
-            / f"{format_output_code(index, len(records))}_"
+            analysis_dir / f"{format_output_code(index, len(records))}_"
             f"{safe_stem(original_header.split(' ')[0])}"
         )
         entry_dir.mkdir(parents=True, exist_ok=True)
