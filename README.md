@@ -108,7 +108,8 @@ Simple:
 ```bash
 fungtion \
   --fasta data/examples/example.fasta \
-  --output outputs/example_prediction.csv \
+  --output-dir outputs \
+  --prefix example_prediction \
   --device auto \
   --skip-visualization
 ```
@@ -118,11 +119,10 @@ With HTML report:
 ```bash
 fungtion \
   --fasta data/examples/example.fasta \
-  --output outputs/example_prediction.csv \
+  --output-dir outputs \
+  --prefix example_prediction \
   --device auto \
-  --analysis-dir outputs/example_analysis \
-  --html-output outputs/example_prediction.html \
-  --html-assets-dir outputs/example_prediction_assets
+  --html-report
 ```
 
 With GPU:
@@ -130,7 +130,8 @@ With GPU:
 ```bash
 fungtion \
   --fasta data/examples/example.fasta \
-  --output outputs/example_prediction.csv \
+  --output-dir outputs \
+  --prefix example_prediction \
   --device cuda \
   --skip-visualization
 ```
@@ -149,7 +150,8 @@ Fungtion with `--pretrain /path/to/esm1b_t33_650M_UR50S.pt`.
 ```bash
 fungtion \
   --fasta data/examples/example.fasta \
-  --output outputs/example_prediction.csv \
+  --output-dir outputs \
+  --prefix example_prediction \
   --pretrain /path/to/esm1b_t33_650M_UR50S.pt \
   --device auto \
   --skip-visualization
@@ -160,10 +162,10 @@ Official ESM-1b weights:
 
 ## Example Run Output
 
-The HTML example above generates:
+The HTML example above generates everything under `outputs/example_prediction/`:
 
 - `example_prediction.csv`: prediction results
-- `example_analysis/`: network and tree intermediate outputs
+- `example_prediction_analysis/`: network and tree intermediate outputs
 - `example_prediction.html`: HTML report
 - `example_prediction_assets/`: HTML report assets and per-sequence visualization pages
 
@@ -186,14 +188,13 @@ The HTML example above generates:
 ## More Parameters On Run
 
 - `--fasta`: input FASTA file
-- `--output`: output CSV file for prediction results
+- `--output-dir`: directory where the prefixed output folder will be created
+- `--prefix`: naming identifier for the output folder and generated files
 - `--pretrain`: optional local path to pretrained ESM-1b weights
 - `--device`: device for ESM-1b feature extraction; choose from `auto`, `cpu`, or `cuda`
-- `--analysis-dir`: output directory for network and tree files
-- `--html-output`: output HTML report path
-- `--html-assets-dir`: output directory for HTML assets and per-sequence visualization pages
+- `--html-report`: generate the HTML report and bundled assets
 - `--skip-visualization`: skip network and tree generation
-- `--keep-temp`: keep intermediate temporary files
+- `--keep-temp`: keep intermediate temporary files under the main output folder
 
 ## Data
 
