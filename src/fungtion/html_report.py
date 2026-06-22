@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 from ._paths import ASSETS_DIR
+from .output_codes import format_output_code
 
 REFERENCE_WEB_STATIC = ASSETS_DIR / "web_static"
 REFERENCE_TREE_MAPPING = REFERENCE_WEB_STATIC / "xmlfile" / "Fungtion_positive.json"
@@ -370,7 +371,7 @@ def generate_html_report(
     rows = []
 
     for index, row in report_df.iterrows():
-        slug = f"{index + 1:04d}"
+        slug = format_output_code(index + 1, total_sequences)
         seq_dir = entries_root / slug
         seq_dir.mkdir(parents=True, exist_ok=True)
         rel_asset_prefix = "../../"
