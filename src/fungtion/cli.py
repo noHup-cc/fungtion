@@ -100,7 +100,7 @@ def main(argv=None):
 
     fasta_path = args.fasta
     output_root = os.path.join(args.output_dir, args.prefix)
-    output_path = os.path.join(output_root, f"{args.prefix}.csv")
+    output_csv = os.path.join(output_root, f"{args.prefix}.csv")
     pretrained_weights_path = resolve_pretrained_weights_path(args.pretrain)
     device = args.device
     analysis_dir = os.path.join(output_root, f"{args.prefix}_analysis")
@@ -132,7 +132,7 @@ def main(argv=None):
     predict_with_r(
         feature_csv,
         header_txt,
-        output_path,
+        output_csv,
         fasta_path=fasta_path,
         reference_fasta=REFERENCE_DATA_DIR / "FungalEffector_positive.fasta",
     )
@@ -141,7 +141,7 @@ def main(argv=None):
         manifest_path = generate_visual_outputs(
             fasta_path=fasta_path,
             feature_csv=feature_csv,
-            prediction_csv=output_path,
+            prediction_csv=output_csv,
             analysis_dir=analysis_dir,
             reference_dir=REFERENCE_DATA_DIR,
         )
@@ -149,7 +149,7 @@ def main(argv=None):
 
     if html_report:
         generate_html_report(
-            prediction_csv=output_path,
+            prediction_csv=output_csv,
             output_html=html_output,
             manifest_csv=manifest_path,
             assets_dir=html_assets_dir,
@@ -165,7 +165,7 @@ def main(argv=None):
             pass
     else:
         print(f"Intermediate files kept in {temp_dir}")
-    print(f"Prediction finished. Results saved to {output_path}")
+    print(f"Prediction finished. Results saved to {output_csv}")
 
 
 if __name__ == "__main__":

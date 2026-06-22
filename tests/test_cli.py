@@ -73,7 +73,7 @@ def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, cap
     fasta_path = tmp_path / "input.fasta"
     fasta_path.write_text(">seq1\nMKT\n")
     output_root = tmp_path / "outputs" / "predictions"
-    output_path = output_root / "predictions.csv"
+    output_csv = output_root / "predictions.csv"
     temp_dir = tmp_path / "temp"
     temp_dir.mkdir()
 
@@ -144,7 +144,7 @@ def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, cap
     cli.main()
 
     captured = capsys.readouterr()
-    assert output_path.exists()
+    assert output_csv.exists()
     assert "Prediction finished. Results saved to" in captured.out
     assert not (temp_dir / "features.csv").exists()
     assert not (temp_dir / "headers.txt").exists()
