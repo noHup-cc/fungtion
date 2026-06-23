@@ -13,6 +13,11 @@ outputs/
 
 *.tmp
 
+# Large benchmark datasets are archived on Zenodo:
+# https://zenodo.org/records/20808434
+data/Fungtion_Independent_Dataset/
+data/Fungtion_Training_Dataset/
+
 # Distribution / packaging
 .Python
 build/
