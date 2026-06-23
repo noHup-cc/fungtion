@@ -8,14 +8,13 @@ version = "1.0.0"
 description = "Predict fungal effector proteins from FASTA files using ESM-1b embeddings and R SVM models."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
   { name = "Jinzheng Ren", email = "renjinzheng2004@gmail.com" }
 ]
 keywords = ["bioinformatics", "fungal effector", "protein prediction", "ESM", "machine learning"]
 classifiers = [
   "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
   "Intended Audience :: Science/Research",
