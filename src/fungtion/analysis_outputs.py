@@ -10,6 +10,8 @@ from Bio import Phylo
 from Bio.Phylo.TreeConstruction import DistanceMatrix, DistanceTreeConstructor
 from sklearn.metrics.pairwise import cosine_similarity
 
+from .output_codes import format_output_code
+
 COLOR_PALETTE = [
     "#c23531",
     "#c8c788",
@@ -419,7 +421,8 @@ def generate_visual_outputs(
 
         query_id = f"Query_{index}"
         entry_dir = (
-            analysis_dir / f"{index:04d}_{safe_stem(original_header.split(' ')[0])}"
+            analysis_dir / f"{format_output_code(index, len(records))}_"
+            f"{safe_stem(original_header.split(' ')[0])}"
         )
         entry_dir.mkdir(parents=True, exist_ok=True)
 
