@@ -125,6 +125,18 @@ fungtion \
   --html-report
 ```
 
+Keep intermediate files:
+
+```bash
+fungtion \
+  --fasta data/examples/example.fasta \
+  --output-dir outputs \
+  --prefix example_prediction \
+  --device auto \
+  --skip-visualization \
+  --keep-temp
+```
+
 With GPU:
 
 ```bash
@@ -168,6 +180,7 @@ The HTML example above generates everything under `outputs/example_prediction/`:
 - `example_prediction_analysis/`: network and tree intermediate outputs
 - `example_prediction.html`: HTML report
 - `example_prediction_assets/`: HTML report assets and per-sequence visualization pages
+- `example_prediction_temp_folder/`: intermediate feature files when `--keep-temp` is used
 
 ## Example Run Output CSV Columns
 
@@ -194,7 +207,7 @@ The HTML example above generates everything under `outputs/example_prediction/`:
 - `--device`: device for ESM-1b feature extraction; choose from `auto`, `cpu`, or `cuda`
 - `--html-report`: generate the HTML report and bundled assets
 - `--skip-visualization`: skip network and tree generation
-- `--keep-temp`: keep intermediate temporary files under the main output folder
+- `--keep-temp`: keep intermediate temporary files under `<output-dir>/<prefix>/<prefix>_temp_folder/`
 
 ## Data
 
