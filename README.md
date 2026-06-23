@@ -200,9 +200,13 @@ The HTML example above generates everything under `outputs/example_prediction/`:
 
 **`data/`**
 
-- `Fungtion_Independent_Dataset/`: full independent test dataset used in the paper
-- `Fungtion_Training_Dataset/`: full training dataset used in the paper
 - `examples/`: example FASTA files for demonstration and example runs
+
+Full training and independent benchmark datasets used in the paper are available
+on Zenodo:
+
+- https://zenodo.org/records/20808434
+- DOI: `10.5281/zenodo.20808434`
 
 **`src/fungtion/reference_data/`**
 
