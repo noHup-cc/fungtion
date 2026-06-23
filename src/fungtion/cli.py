@@ -41,7 +41,7 @@ def _predict_parser():
     parser.add_argument(
         "--keep-temp",
         action="store_true",
-        help="Keep intermediate feature files",
+        help="Keep intermediate files under the prefixed output folder",
     )
     parser.set_defaults(command="predict")
     return parser
