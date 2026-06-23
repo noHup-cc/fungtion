@@ -110,6 +110,12 @@ def main(argv=None):
     skip_visualization = args.skip_visualization
     keep_temp = args.keep_temp
 
+    print("Starting Fungtion prediction run")
+    print(f"Input FASTA: {fasta_path}")
+    print(f"Output directory: {output_root}")
+    print(f"Using ESM-1b weights: {pretrained_weights_path}")
+    print(f"Feature extraction device: {device}")
+
     os.makedirs(output_root, exist_ok=True)
 
     if keep_temp:
@@ -121,6 +127,7 @@ def main(argv=None):
     header_txt = os.path.join(temp_dir, "headers.txt")
     manifest_path = None
 
+    print("Extracting ESM-1b features...")
     extract_esm_features(
         fasta_path,
         feature_csv,
@@ -128,7 +135,9 @@ def main(argv=None):
         pretrained_weights_path=pretrained_weights_path,
         device=device,
     )
+    print(f"ESM-1b features saved to {feature_csv}")
 
+    print("Running fungal effector prediction...")
     predict_with_r(
         feature_csv,
         header_txt,
@@ -136,8 +145,10 @@ def main(argv=None):
         fasta_path=fasta_path,
         reference_fasta=REFERENCE_DATA_DIR / "FungalEffector_positive.fasta",
     )
+    print(f"Prediction CSV saved to {output_csv}")
 
     if not skip_visualization:
+        print("Generating network and tree visualizations...")
         manifest_path = generate_visual_outputs(
             fasta_path=fasta_path,
             feature_csv=feature_csv,
@@ -146,8 +157,11 @@ def main(argv=None):
             reference_dir=REFERENCE_DATA_DIR,
         )
         print(f"Visualization manifest saved to {manifest_path}")
+    else:
+        print("Skipping network and tree visualizations")
 
     if html_report:
+        print("Generating HTML report...")
         generate_html_report(
             prediction_csv=output_csv,
             output_html=html_output,
@@ -157,6 +171,7 @@ def main(argv=None):
         print(f"HTML report saved to {html_output}")
 
     if not keep_temp:
+        print("Cleaning up intermediate files...")
         try:
             os.remove(feature_csv)
             os.remove(header_txt)

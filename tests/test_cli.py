@@ -145,6 +145,13 @@ def test_main_runs_end_to_end_with_skip_visualization(monkeypatch, tmp_path, cap
 
     captured = capsys.readouterr()
     assert output_csv.exists()
+    assert "Starting Fungtion prediction run" in captured.out
+    assert f"Input FASTA: {fasta_path}" in captured.out
+    assert f"Output directory: {output_root}" in captured.out
+    assert "Extracting ESM-1b features..." in captured.out
+    assert "Running fungal effector prediction..." in captured.out
+    assert "Skipping network and tree visualizations" in captured.out
+    assert "Cleaning up intermediate files..." in captured.out
     assert "Prediction finished. Results saved to" in captured.out
     assert not (temp_dir / "features.csv").exists()
     assert not (temp_dir / "headers.txt").exists()
@@ -248,6 +255,11 @@ def test_main_runs_visualization_and_html_paths(monkeypatch, tmp_path, capsys):
     assert html_assets_dir.exists()
     assert (temp_dir / "features.csv").exists()
     assert (temp_dir / "headers.txt").exists()
+    assert "Starting Fungtion prediction run" in captured.out
+    assert "Extracting ESM-1b features..." in captured.out
+    assert "Running fungal effector prediction..." in captured.out
+    assert "Generating network and tree visualizations..." in captured.out
     assert "Visualization manifest saved to" in captured.out
+    assert "Generating HTML report..." in captured.out
     assert "HTML report saved to" in captured.out
     assert f"Intermediate files kept in {temp_dir}" in captured.out
