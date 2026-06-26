@@ -5,6 +5,7 @@
 # Fungtion
 
 [![PyPI](https://img.shields.io/pypi/v/fungtion)](https://pypi.org/project/fungtion/)
+[![Bioconda](https://img.shields.io/conda/vn/bioconda/fungtion)](https://bioconda.github.io/recipes/fungtion/README.html#package-package%20&#x27;fungtion&#x27;)
 
 Predict fungal effectors from FASTA files using ESM-1b embeddings and R SVM models.
 
